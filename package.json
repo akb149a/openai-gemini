@@ -15,4 +15,4 @@
     "dev:bun": "bun --watch bun.mjs",
     "test": "echo \"No tests specified\" && exit 0"
   }
-}
+

@@ -14,5 +14,5 @@ jobs:
       - name: Build & Deploy Worker
         uses: cloudflare/wrangler-action@v3
         with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
-          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          apiToken: ${{ 0pEaIkJR4Ind0vir2TqIdOda8lRXaEcAUoooai50 }}
+          accountId: ${{ 5c39c0589a4d16357f807e75bfc50bbc}}

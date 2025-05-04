@@ -1,9 +1,6 @@
 {
   "devDependencies": {
-    "wrangler": "^3.0.0"
-  }
-}
-  "devDependencies": {
+    "wrangler": "^3.0.0",
     "nodemon": "3"
   },
   "scripts": {
@@ -15,4 +12,4 @@
     "dev:bun": "bun --watch bun.mjs",
     "test": "echo \"No tests specified\" && exit 0"
   }
-
+}

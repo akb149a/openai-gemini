@@ -3,16 +3,15 @@ on:
   push:
     branches:
       - main
-  pull_request:
-  repository_dispatch:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: Deploy
+    timeout-minutes: 15
+    needs: test
     steps:
       - uses: actions/checkout@v4
       - name: Build & Deploy Worker
         uses: cloudflare/wrangler-action@v3
         with:
-          apiToken: ${{ 0pEaIkJR4Ind0vir2TqIdOda8lRXaEcAUoooai50 }}
+          apiToken: ${{ WH1OJMU2EOm_08YFBnhmK55577ovoqkwCuwc8KRK }}
           accountId: ${{ 5c39c0589a4d16357f807e75bfc50bbc }}

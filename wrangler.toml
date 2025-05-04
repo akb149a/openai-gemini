@@ -1,4 +1,4 @@
-name = "# wrangler.toml
+
 name = 'workers-playground-proud-tree-84bc'"
 main = "src/worker.mjs"
 compatibility_date = "2024-09-23"

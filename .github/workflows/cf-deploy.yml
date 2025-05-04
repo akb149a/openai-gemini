@@ -22,15 +22,15 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    needs: [init, test]  # Multiple dependencies
+    needs: [init, test]
     steps:
     - uses: actions/checkout@v4
-    - name: Install Wrangler
-      run: npm install -g wrangler
+    - name: Install Wrangler Locally
+      run: npm install wrangler --save-dev
     - name: Verify Wrangler Installation
-      run: wrangler --version
+      run: npx wrangler --version
     - name: Deploy with Wrangler
-      uses: cloudflare/wrangler-action@v3
-      with:
-        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      run: npx wrangler publish
+      env:
+        CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

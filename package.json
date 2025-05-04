@@ -1,7 +1,8 @@
 {
-  "dependencies": {
-    "@whatwg-node/server": "0.9"
-  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
   "devDependencies": {
     "nodemon": "3"
   },

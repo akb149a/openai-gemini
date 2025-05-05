@@ -10,6 +10,10 @@
     "dev:deno": "deno --watch --allow-env --allow-net deno.mjs",
     "start:bun": "bun bun.mjs",
     "dev:bun": "bun --watch bun.mjs",
-    "test": "echo \"No tests specified\" && exit 0"
+    "test": "echo \"No tests specified\" && exit 0",
+
+    // 新增的浅层安装命令 👇
+    "install:shallow": "npm install --install-strategy=shallow",
+    "ci": "npm run install:shallow -- --omit=dev && npm run build"
   }
 }
